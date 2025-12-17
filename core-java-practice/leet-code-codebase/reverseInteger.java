@@ -1,5 +1,14 @@
-class Solution {
-    public int reverse(int x) {
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int result = reverse(x);
+        System.out.print(result);
+    }
+
+    public static int reverse(int x) {
         // if(x == 0){
         //     return 0;
         // }
