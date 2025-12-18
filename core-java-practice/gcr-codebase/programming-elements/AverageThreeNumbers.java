@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class averageThreeNumbers {
+public class AverageThreeNumbers {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
