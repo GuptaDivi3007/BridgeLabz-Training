@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class kilometersToMiles {
+public class KmToMiles {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
