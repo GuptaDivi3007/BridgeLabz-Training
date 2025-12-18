@@ -1,14 +1,12 @@
 import java.util.*;
 
-public class perimeterOfARectangle {
+public class perimeterOfRectangle {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter length of the rectangle: ");
-        double len = sc.nextDouble();
-        System.out.print("Enter breadth of the rectangle: ");
-        double bre = sc.nextDouble();
-        double peri = 2 * (len + bre);
-        System.out.println("Perimeter of the rectangle: " + peri);
+        double l = sc.nextDouble();
+        double b = sc.nextDouble();
+        double peri = 2 * (l + b);
+        System.out.print("Perimeter of the rectangle: " + peri);
     }
 }
