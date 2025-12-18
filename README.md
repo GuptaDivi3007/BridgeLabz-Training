@@ -4,7 +4,7 @@
 ```text
 BridgeLabz-Training
 │
-├── core-java-practice
+├── core-java-practice (branch & folder)
 │   │
 │   ├── gcr-codebase
 │   │   ├── programming-elements
@@ -19,3 +19,4 @@ BridgeLabz-Training
 ## Tools Used
 * Eclipse IDE
 * Visual Studio
+
