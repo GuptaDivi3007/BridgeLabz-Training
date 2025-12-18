@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class volumeCylinder {
+public class VolumeCylinder {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
