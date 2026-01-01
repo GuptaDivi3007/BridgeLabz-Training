@@ -1,0 +1,43 @@
+import java.util.*;
+
+public class VehicleRegistrationSystem {
+
+    public static void main(String[] args) {
+        Vehicle v1 = new Vehicle("Honest raj", "Sedan", "ABC123");
+        Vehicle v2 = new Vehicle("Price danish", "SUV", "XYZ789");
+
+        if (v1 instanceof Vehicle) {
+            v1.showDetails();
+        }
+
+        if (v2 instanceof Vehicle) {
+            v2.showDetails();
+        }
+    }
+}
+
+class Vehicle {
+
+    static double registrationFee = 150.0;
+
+    String ownerName;
+    String vehicleType;
+    final String registrationNumber;
+
+    Vehicle(String ownerName, String vehicleType, String registrationNumber) {
+        this.ownerName = ownerName;
+        this.vehicleType = vehicleType;
+        this.registrationNumber = registrationNumber;
+    }
+
+    static void updateRegistrationFee(double newFee) {
+        registrationFee = newFee;
+    }
+
+    void showDetails() {
+        System.out.println("Owner Name: " + ownerName);
+        System.out.println("Vehicle Type: " + vehicleType);
+        System.out.println("Registration Number: " + registrationNumber);
+        System.out.println("Registration Fee: $" + registrationFee);
+    }
+}
