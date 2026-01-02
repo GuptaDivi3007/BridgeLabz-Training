@@ -1,0 +1,12 @@
+                                            class diagram
+
++--------------------+                   +---------------------+                   +---------------------+
+|      Company       |                   |     Department      |                   |      Employee       |
++--------------------+                   +---------------------+                   +---------------------+
+| - companyName      |  1             *  | - departmentName    |  1             *  | - employeeName      |
+| - companyId        | 🔷-------------- | - departmentId      | 🔷--------------- | - employeeId        |
++--------------------+    Composition    +---------------------+    Composition    | - role              |
+| + addDepartment()  |                   | + addEmployee()     |                   +---------------------+
+| + removeCompany()  |                   |                     |                   |                     |
++--------------------+                   +---------------------+                   +---------------------+
+

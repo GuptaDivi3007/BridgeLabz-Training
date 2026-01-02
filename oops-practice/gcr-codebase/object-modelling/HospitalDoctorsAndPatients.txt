@@ -1,0 +1,12 @@
+                                            class diagram
+
++--------------------+                  +---------------------+                  +---------------------+
+|      Hospital      |                  |        Doctor       |                  |        Patient      |
++--------------------+                  +---------------------+                  +---------------------+
+| - hospitalName     |  1            *  | - doctorId          |  *            *  | - patientId         |
+| - location         | ---------------- | - doctorName        | ---------------- | - patientName       |
+|                    |   Association    | - specialization    |    Association   | - ailment           |
++--------------------+                  +---------------------+                  +---------------------+
+| + addDoctor()      |                  | + consult(patient)  |                  |                     |
+| + addPatient()     |                  +---------------------+                  +---------------------+
++--------------------+

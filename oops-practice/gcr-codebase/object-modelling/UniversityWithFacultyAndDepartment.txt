@@ -1,0 +1,12 @@
+                                                class diagram
+
+
++----------------------+                   +---------------------+                  +---------------------+
+|     University       |                   |     Department      |                  |       Faculty       |
++----------------------+                   +---------------------+                  +---------------------+
+| - universityName     |  1             *  | - departmentName    |  1            *  | - facultyId         |
+| - universityCode     | 🔷-------------- | - departmentId      | <>-------------- | - facultyName       |
+|                      |    Composition    |                     |   Aggregation    | - specialization    |
++----------------------+                   +---------------------+                  +---------------------+
+| + deleteUniversity() |                   |                     |                  |                     |
++----------------------+                   +---------------------+                  +---------------------+
