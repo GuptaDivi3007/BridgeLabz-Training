@@ -19,7 +19,7 @@ BridgeLabz-Training
 
 ## Tools Used
 * Eclipse IDE
-* Visual Studio
+* Visual Studio Code
 
 ## What we have done till now
 ### Week 1
@@ -43,4 +43,19 @@ BridgeLabz-Training
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based  
 * **30-Dec-2025 (Tuesday) :** Solved Line Comparison And Snake and Ladder problems.  
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based  
+* **31-Dec-2025 (Wednesday) :** Studied some concepts of java class and object and submitted its assignment.  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/class-object  
+* **1-Jan-2026 (Thursday) :** Submitted assignment of java contructors and static-this-final-instanceOf.  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/constructor  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/static-this-final-instanceOf  
+* **2-Jan-2026 (Friday) :** Understand the concepts of class, object and sequence diagrams and submitted its assignment and solved 4 scenario-based questions.  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/object-modelling  
+* **3-Jan-2026 (Saturday) :** Solved assignment of inheritance.  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/inheritance  
+### Week 4
+* **5-Jan-2026 (Monday) :** Solved assignment of oops-pillars and 2 scenario-based question.  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/oops-pillars  
+* **6-Jan-2026 (Tuesday) :** Submitted the assignment of scenario-based questions and solved 2 leetcode questions and submitted them.  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/leet-code-codebase  
 
