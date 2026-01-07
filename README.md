@@ -4,17 +4,37 @@
 ```text
 BridgeLabz-Training
 │
-├── core-java-practice (branch & folder)
+├── core-java-practice    (branch & folder)
 │   │
 │   ├── gcr-codebase
-│   │   ├── programming-elements
-│   │   ├── control-flow
 │   |   ├── arrays
+│   │   ├── control-flow
+│   │   ├── extras
+│   │   ├── methods
+│   │   ├── programming-elements
 │   |   └── strings
 │   │
 │   ├── scenario-based
 │   │
 │   └── leet-code-codebase
+|
+├── oops-practice    (branch & folder)
+│   │
+│   ├── gcr-codebase
+|   |   ├── access-modifier
+|   |   ├── class-object
+|   |   ├── constructor
+│   │   ├── inheritance
+│   │   ├── instance
+|   |   ├── object-modelling
+|   |   ├── oops-pillars
+│   │   └── static-this-final-instanceOf
+│   │
+│   ├── scenario-based
+│   │
+│   └── leet-code-codebase
+│
+├── reviews    (branch)
 ```
 
 ## Tools Used
@@ -58,4 +78,5 @@ BridgeLabz-Training
 * **6-Jan-2026 (Tuesday) :** Submitted the assignment of scenario-based questions and solved 2 leetcode questions and submitted them.  
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based  
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/leet-code-codebase  
+
 
