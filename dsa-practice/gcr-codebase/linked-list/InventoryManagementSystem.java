@@ -1,4 +1,5 @@
-package LinkedList;
+import java.util.*;
+
 class Item {
     int itemId;
     String itemName;
@@ -16,9 +17,10 @@ class Item {
 }
 
 public class InventoryManagementSystem {
-    static Item head=null;
+    static Item head = null;
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		addAtBeginning(101, "Mouse", 20, 499.99);
         addAtEnd(102, "Keyboard", 10, 999.49);
         addAtPosition(2, 103, "Monitor", 5, 7999.99);
@@ -43,13 +45,13 @@ public class InventoryManagementSystem {
         removeById(102);
         displayAll();
 	}
+
 	public static void addAtBeginning(int id, String name, int quantity, double price) {
         Item newItem = new Item(id, name, quantity, price);
         newItem.next = head;
         head = newItem;
     }
 
-    
     public static void addAtEnd(int id, String name, int quantity, double price) {
         Item newItem = new Item(id, name, quantity, price);
         if (head == null) {
@@ -62,7 +64,6 @@ public class InventoryManagementSystem {
         }
         temp.next = newItem;
     }
-
     
     public static void addAtPosition(int pos, int id, String name, int quantity, double price) {
         if (pos <= 1) {
@@ -79,12 +80,12 @@ public class InventoryManagementSystem {
         }
         if (temp == null) {
             addAtEnd(id, name, quantity, price);
-        } else {
+        }
+        else {
             newItem.next = temp.next;
             temp.next = newItem;
         }
     }
-
     
     public static void removeById(int id) {
         if (head == null) {
@@ -101,13 +102,16 @@ public class InventoryManagementSystem {
         }
         if (temp.next == null) {
             System.out.println("Item not found!");
-        } else {
+        }
+        else {
             temp.next = temp.next.next;
         }
     }
     
     public static Item mergeSort(Item head, String sortBy, boolean ascending) {
-        if (head == null || head.next == null) return head;
+        if (head == null || head.next == null) {
+            return head;
+        }
 
         Item mid = getMiddle(head);
         Item nextOfMid = mid.next;
@@ -120,23 +124,31 @@ public class InventoryManagementSystem {
     }
 
     public static Item sortedMerge(Item a, Item b, String sortBy, boolean ascending) {
-        if (a == null) return b;
-        if (b == null) return a;
+        if (a == null) {
+            return b;
+        }
+        if (b == null) {
+            return a;
+        }
 
         boolean compare;
         if (sortBy.equalsIgnoreCase("name")) {
             compare = a.itemName.compareToIgnoreCase(b.itemName) < 0;
-        } else {
+        }
+        else {
             compare = a.price < b.price;
         }
 
-        if (!ascending) compare = !compare;
+        if (!ascending) {
+            compare = !compare;
+        }
 
         Item result;
         if (compare) {
             result = a;
             result.next = sortedMerge(a.next, b, sortBy, ascending);
-        } else {
+        }
+        else {
             result = b;
             result.next = sortedMerge(a, b.next, sortBy, ascending);
         }
@@ -144,7 +156,9 @@ public class InventoryManagementSystem {
     }
 
     public static Item getMiddle(Item head) {
-        if (head == null) return head;
+        if (head == null) {
+            return head;
+        }
         Item slow = head, fast = head;
         while (fast.next != null && fast.next.next != null) {
             slow = slow.next;
@@ -152,15 +166,16 @@ public class InventoryManagementSystem {
         }
         return slow;
     }
-
    
     public static void sortInventory(String sortBy, boolean ascending) {
         if (sortBy.equalsIgnoreCase("name") || sortBy.equalsIgnoreCase("price")) {
             head = mergeSort(head, sortBy, ascending);
-        } else {
+        }
+        else {
             System.out.println("Invalid sort criteria!");
         }
     }
+
     public static void displayAll() {
         Item temp = head;
         if (temp == null) {
@@ -175,6 +190,7 @@ public class InventoryManagementSystem {
             temp = temp.next;
         }
     }
+
     public static void updateQuantity(int id, int newQuantity) {
         Item temp = head;
         while (temp != null) {
@@ -186,7 +202,6 @@ public class InventoryManagementSystem {
         }
         System.out.println("Item ID not found!");
     }
-
     
     public static void searchById(int id) {
         Item temp = head;
@@ -200,7 +215,6 @@ public class InventoryManagementSystem {
         }
         System.out.println("Item not found!");
     }
-
    
     public static void searchByName(String name) {
         Item temp = head;

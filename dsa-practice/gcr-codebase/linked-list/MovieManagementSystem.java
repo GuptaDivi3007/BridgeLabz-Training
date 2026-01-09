@@ -1,8 +1,6 @@
-package LinkedList;
+import java.util.*;
 
-import java.util.Scanner;
-
-class Movie{
+class Movie {
 	String title;
     String director;
     int year;
@@ -19,55 +17,64 @@ class Movie{
         this.prev = null;
     }
 }
+
 public class MovieManagementSystem {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Movie head=null;
-		head=addFirst(head,"Inception", "Nolan", 2010, 9.0);
-		head=addLast(head,"Interstellar", "Nolan", 2014, 8.6);
-		head=addAtPosition(head,"Tenet", "Nolan", 2020, 7.5, 2);
+
+		Movie head = null;
+		head = addFirst(head, "Inception", "Nolan", 2010, 9.0);
+		head = addLast(head, "Interstellar", "Nolan", 2014, 8.6);
+		head = addAtPosition(head, "Tenet", "Nolan", 2020, 7.5, 2);
+
 		display(head);
 		System.out.println("---------------------------------");
+
 		delete(head,"Inception");
 		System.out.println("---------------------------------");
+
 		display(head);
 		System.out.println("---------------------------------");
-		head=addFirst(head,"Inception", "Nolan", 2010, 9.0);
+
+		head = addFirst(head, "Inception", "Nolan", 2010, 9.0);
 		System.out.println("---------------------------------");
 		
-		searchRating(head,8.6);
+		searchRating(head, 8.6);
 		System.out.println("---------------------------------");
-		updateRating(head,"Inception",8.6);
+
+		updateRating(head, "Inception", 8.6);
 		System.out.println("---------------------------------");
+
 		displaybackward(head);
 		
 	}
     
-	public static Movie addFirst(Movie head,String title, String director, int year, double rating) {
-    	Movie newNode=new Movie(title,director,year,rating);
-    	if(head==null) {
+	public static Movie addFirst(Movie head, String title, String director, int year, double rating) {
+    	Movie newNode = new Movie(title, director, year, rating);
+    	if(head == null) {
     		return newNode;
     	}
-    	newNode.next=head;
-    	head.prev=newNode;
+    	newNode.next = head;
+    	head.prev = newNode;
     	return newNode;
     }
-    public static Movie addLast(Movie head,String title, String director, int year, double rating) {
-    	Movie newNode=new Movie(title,director,year,rating);
-    	if(head==null) {
+
+    public static Movie addLast(Movie head, String title, String director, int year, double rating) {
+    	Movie newNode = new Movie(title, director, year, rating);
+    	if(head == null) {
     		return newNode;
     	}
-    	Movie temp=head;
-    	while(temp.next!=null) {
-    		temp=temp.next;
+    	Movie temp = head;
+    	while(temp.next != null) {
+    		temp = temp.next;
     	}
-    	temp.next=newNode;
-    	newNode.prev=temp;
+    	temp.next = newNode;
+    	newNode.prev = temp;
     	return head;
     }
-    public static Movie addAtPosition(Movie head,String title, String director, int year, double rating,int pos) {
-    	Movie newNode=new Movie(title,director,year,rating);
+
+    public static Movie addAtPosition(Movie head, String title, String director, int year, double rating, int pos) {
+    	Movie newNode = new Movie(title, director, year, rating);
     	if (pos == 1) {
             if (head != null) {
                 head.prev = newNode;
@@ -82,13 +89,11 @@ public class MovieManagementSystem {
             temp = temp.next;
             count++;
         }
-
         
         if (temp == null) {
             System.out.println("Invalid Position");
             return head;
         }
-
         
         Movie nextNode = temp.next;
         temp.next = newNode;
@@ -101,64 +106,68 @@ public class MovieManagementSystem {
 
         return head;
     }
+
     public static void display(Movie head) {
-    	Movie temp=head;
-    	while(temp!=null) {
-    		System.out.println(temp.title+" "+temp.director+" "+temp.year+" "+temp.rating+" ");
-    		temp=temp.next;
+    	Movie temp = head;
+    	while(temp != null) {
+    		System.out.println(temp.title + " " + temp.director + " " + temp.year + " " + temp.rating + " ");
+    		temp = temp.next;
     	}
     }
    
-    public static void delete(Movie head,String title) {
-    	Movie temp=head;
-    	Movie curr=null;
-    	while(temp!=null) {
+    public static void delete(Movie head, String title) {
+    	Movie temp = head;
+    	Movie curr = null;
+    	while(temp != null) {
     		if(temp.title.equals(title)) {
-    			if(curr!=null) {
-    				Movie newNode=temp.next;
-    				curr.next=newNode;
-    				newNode.prev=curr;
+    			if(curr != null) {
+    				Movie newNode = temp.next;
+    				curr.next = newNode;
+    				newNode.prev = curr;
     			}
     			else {
-    				head=temp.next;
+    				head = temp.next;
     			}
     			return;
     		}
-    		curr=temp;
-    		temp=temp.next;
+    		curr = temp;
+    		temp = temp.next;
     		
     	}
     }
-    public static void searchRating(Movie head,double ratings) {
-    	Movie temp=head;
-    	while(temp!=null) {
-    		if(temp.rating==ratings) {
-    			System.out.println(temp.title+" "+temp.director+" "+temp.year+" "+temp.rating);
+
+    public static void searchRating(Movie head, double ratings) {
+    	Movie temp = head;
+    	while(temp != null) {
+    		if(temp.rating == ratings) {
+    			System.out.println(temp.title + " " + temp.director + " " + temp.year + " " + temp.rating);
     		}
-    		temp=temp.next;
+    		temp = temp.next;
     	}
     }
-    public static Movie updateRating(Movie head,String title,double rating) {
+	
+    public static Movie updateRating(Movie head, String title, double rating) {
     	
-    	Movie temp=head;
-    	while(temp!=null) {
-    		if(temp.title==title) {
-    			temp.rating=rating;
-    			System.out.println(temp.title+" "+temp.director+" "+temp.year+" "+temp.rating);
+    	Movie temp = head;
+    	while(temp != null) {
+    		if(temp.title == title) {
+    			temp.rating = rating;
+    			System.out.println(temp.title + " " + temp.director + " " + temp.year + " " + temp.rating);
     			return head;
     		}
     	}
     	System.out.println("Student Not Found!");
     	return head;
     }
+
     public static void displaybackward(Movie head) {
-    	Movie temp=head;
-    	while(temp.next!=null) {
-    		temp=temp.next;
+    	Movie temp = head;
+    	while(temp.next != null) {
+    		temp = temp.next;
     	}
-    	while(temp!=null) {
-    		System.out.println(temp.title+" "+temp.director+" "+temp.year+" "+temp.rating);
-    		temp=temp.prev;
+    	while(temp != null) {
+    		System.out.println(temp.title + " " + temp.director + " " + temp.year + " " + temp.rating);
+    		temp = temp.prev;
     	}
     }
 }

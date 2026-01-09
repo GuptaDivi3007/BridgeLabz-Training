@@ -34,38 +34,40 @@ public class StudentRecordMangement {
 			System.out.println("enter 1 for end, enter 2 for start, enter 0 for specific position");
 			int choose = sc.nextInt();
 			switch(choose) {
-			case 0: {
-				head = addStudent(head, rollNumber, name, age, grade);
-				break;
-			}
-			case 1: {
-				head = addStudentAtStart(head, rollNumber, name, age, grade);
-				break;
-			}
-			case 2: {
-				int pos = sc.nextInt();
-				head = addStudentAtPlace(head, rollNumber, name, age, grade, pos);
-				break;
-			}
+				case 0: {
+					head = addStudent(head, rollNumber, name, age, grade);
+					break;
+				}
+				case 1: {
+					head = addStudentAtStart(head, rollNumber, name, age, grade);
+					break;
+				}
+				case 2: {
+					int pos = sc.nextInt();
+					head = addStudentAtPlace(head, rollNumber, name, age, grade, pos);
+					break;
+				}
 			}
 			
 			detailsCount--;
 		}
 
 		display(head);
+
 		int rollNum = sc.nextInt();
 		head = delete(head, rollNum);
 		display(head);
+
 		int rollNum1 = sc.nextInt();
 		searchStudent(head, rollNum1);
 		head = updateGrade(head, rollNum, sc);
 		display(head);
-
 	}
+
 	public static Node addStudentAtStart(Node temp, int rollNumber, String name, int age, String grade) {
 		Node head = new Node(rollNumber, name, age, grade);
 		if(head == null) {
-			head=temp;
+			head = temp;
 		}
 		else {
 			head.next = temp;
@@ -73,6 +75,7 @@ public class StudentRecordMangement {
 		
 		return head;
 	}
+
 	public static Node addStudent(Node head, int rollNumber, String name, int age, String grade) {
 		Node temp = new Node(rollNumber, name, age, grade);
 		if(head == null) {
@@ -85,6 +88,7 @@ public class StudentRecordMangement {
 		curr.next = temp;
 		return head;
 	}
+
 	public static Node addStudentAtPlace(Node head, int rollNumber, String name, int age, String grade, int pos) {
 		Node newNode = new Node(rollNumber, name, age, grade);
 		if(pos == 1) {
@@ -104,7 +108,8 @@ public class StudentRecordMangement {
         newNode.next = temp.next;
         temp.next = newNode;
         return head;
-	} 
+	}
+
     public static void display(Node head) {
     	Node temp = head;
     	while(temp != null) {
@@ -114,6 +119,7 @@ public class StudentRecordMangement {
     		temp = temp.next;
     	}
     }
+
     public static Node delete(Node head, int rollNum) {
     	Node curr = head;
     	Node prev = null;
@@ -133,6 +139,7 @@ public class StudentRecordMangement {
     	}
     	return head;
     }
+
     public static void searchStudent(Node head, int rollNum) {
     	Node temp = head;
     	while(temp != null) {
@@ -144,6 +151,7 @@ public class StudentRecordMangement {
     	System.out.println("Student Not Found!");
     	return;
     }
+	
     public static Node updateGrade(Node head, int rollNum, Scanner sc) {
     	String updateGrade = sc.nextLine();
     	Node temp = head;

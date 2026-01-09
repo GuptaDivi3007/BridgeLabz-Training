@@ -1,5 +1,5 @@
-package LinkedList;
 import java.util.*;
+
 class User {
     int userId;
     String name;
@@ -15,15 +15,17 @@ class User {
         this.next = null;
     }
 }
+
 public class SocialMediaFriendConnections {
-    static User head=null;
+
+    static User head = null;
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		addUser(1, "Alice", 21);
         addUser(2, "Bob", 23);
         addUser(3, "Charlie", 20);
         addUser(4, "David", 24);
-
         
         addFriendConnection(1, 2);
         addFriendConnection(1, 3);
@@ -45,6 +47,7 @@ public class SocialMediaFriendConnections {
         displayFriends(1);
         displayFriends(2);
 	}
+
 	public static void addUser(int userId, String name, int age) {
         User newUser = new User(userId, name, age);
 
@@ -60,18 +63,18 @@ public class SocialMediaFriendConnections {
 
         temp.next = newUser;
     }
-
    
     public static User findUserById(int userId) {
         User temp = head;
         while (temp != null) {
-            if (temp.userId == userId) return temp;
+            if (temp.userId == userId) {
+                return temp;
+            }
             temp = temp.next;
         }
         return null;
     }
 
-   
     public static User searchByName(String name) {
         User temp = head;
         while (temp != null) {
@@ -81,7 +84,6 @@ public class SocialMediaFriendConnections {
         return null;
     }
 
-  
     public static void addFriendConnection(int userId1, int userId2) {
         User u1 = findUserById(userId1);
         User u2 = findUserById(userId2);
@@ -91,12 +93,15 @@ public class SocialMediaFriendConnections {
             return;
         }
 
-        if (!u1.friends.contains(userId2)) u1.friends.add(userId2);
-        if (!u2.friends.contains(userId1)) u2.friends.add(userId1);
+        if (!u1.friends.contains(userId2)) {
+            u1.friends.add(userId2);
+        }
+        if (!u2.friends.contains(userId1)) {
+            u2.friends.add(userId1);
+        }
 
         System.out.println(u1.name + " and " + u2.name + " are now friends.");
     }
-
   
     public static void removeFriendConnection(int userId1, int userId2) {
         User u1 = findUserById(userId1);
@@ -112,7 +117,6 @@ public class SocialMediaFriendConnections {
 
         System.out.println(u1.name + " and " + u2.name + " are no longer friends.");
     }
-
     
     public static void displayFriends(int userId) {
         User user = findUserById(userId);
@@ -133,7 +137,6 @@ public class SocialMediaFriendConnections {
         }
     }
 
-  
     public static void findMutualFriends(int userId1, int userId2) {
         User u1 = findUserById(userId1);
         User u2 = findUserById(userId2);
@@ -158,7 +161,6 @@ public class SocialMediaFriendConnections {
             System.out.println("No mutual friends.");
         }
     }
-
    
     public static void countFriends() {
         User temp = head;

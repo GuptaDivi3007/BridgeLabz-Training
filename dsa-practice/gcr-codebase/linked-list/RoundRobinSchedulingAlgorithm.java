@@ -1,4 +1,5 @@
-package LinkedList;
+import java.util.*;
+
 class Process {
     int pid;
     int burstTime;
@@ -12,18 +13,18 @@ class Process {
         this.next = this; 
     }
 }
+
 public class RoundRobinSchedulingAlgorithm {
+
     static Process head = null;
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
         int quantum = 3; 
 
-        
         addProcess(1, 10, 1);
         addProcess(2, 5, 2);
         addProcess(3, 8, 1);
-
        
         int[] originalBurst = {10, 5, 8};
         int[] completionTime = new int[3];
@@ -32,7 +33,6 @@ public class RoundRobinSchedulingAlgorithm {
         System.out.println("Initial Process Queue:");
         displayQueue();
        
-
         Process current = head;
 
         while (head != null) {
@@ -48,15 +48,14 @@ public class RoundRobinSchedulingAlgorithm {
                 int pidToRemove = current.pid;
                 current = current.next;
                 removeProcess(pidToRemove);
-            } else {
+            }
+            else {
                 current = current.next;
             }
 
             System.out.println("Queue after this round:");
             displayQueue();
-
         }
-
        
         int[] turnaround = new int[3];
         int[] waiting = new int[3];
@@ -64,10 +63,11 @@ public class RoundRobinSchedulingAlgorithm {
             turnaround[i] = completionTime[i];
             waiting[i] = turnaround[i] - originalBurst[i];
         }
-
         
-        double avgWT = 0, avgTAT = 0;
+        double avgWT = 0;
+        double avgTAT = 0;
         System.out.println("Final Results:");
+
         for (int i = 0; i < 3; i++) {
             System.out.println("PID " + (i + 1) + 
                 " || Waiting Time = " + waiting[i] + 
@@ -75,11 +75,11 @@ public class RoundRobinSchedulingAlgorithm {
             avgWT += waiting[i];
             avgTAT += turnaround[i];
         }
-
         
         System.out.println("Average Waiting Time = " + (avgWT / 3));
         System.out.println("Average Turnaround Time = " + (avgTAT / 3));
 	}
+
 	public static void addProcess(int pid, int burstTime, int priority) {
         Process newNode = new Process(pid, burstTime, priority);
 
@@ -95,10 +95,11 @@ public class RoundRobinSchedulingAlgorithm {
         temp.next = newNode;
         newNode.next = head;
     }
-
     
     public static void removeProcess(int pid) {
-        if (head == null) return;
+        if (head == null) {
+            return;
+        }
 
         Process curr = head;
         Process prev = null;
@@ -106,26 +107,28 @@ public class RoundRobinSchedulingAlgorithm {
         do {
             if (curr.pid == pid) {
                 if (prev == null) {
-                   
                     if (head.next == head) {
                         head = null;
-                    } else {
+                    }
+                    else {
                        
                         Process last = head;
                         while (last.next != head) last = last.next;
                         last.next = head.next;
                         head = head.next;
                     }
-                } else {
+                }
+                else {
                     prev.next = curr.next;
                 }
+
                 return;
             }
             prev = curr;
             curr = curr.next;
-        } while (curr != head);
+        }
+        while (curr != head);
     }
-
     
     public static void displayQueue() {
         if (head == null) {
@@ -136,7 +139,8 @@ public class RoundRobinSchedulingAlgorithm {
         do {
             System.out.print("[PID: " + temp.pid + ", BT: " + temp.burstTime + "] -> ");
             temp = temp.next;
-        } while (temp != head);
+        }
+        while (temp != head);
         System.out.println("(back to head)");
     }
 }

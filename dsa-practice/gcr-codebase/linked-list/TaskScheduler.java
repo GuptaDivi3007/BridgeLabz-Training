@@ -1,4 +1,5 @@
-package LinkedList;
+import java.util.*;
+
 class Task {
     int taskId;
     String taskName;
@@ -14,13 +15,14 @@ class Task {
         this.next = null;
     }
 }
+
 public class TaskScheduler {
+
 	static Task head = null;
     static Task current = null;
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 
+	public static void main(String[] args) {
+		
         addAtBeginning(1, "Design Module", "High", "2026-01-10");
         addAtEnd(2, "Implement Logic", "Medium", "2026-01-12");
         addAtPosition(2, 3, "Code Review", "Low", "2026-01-15");
@@ -40,6 +42,7 @@ public class TaskScheduler {
         viewCurrentAndNext();
         viewCurrentAndNext();
 	}
+
 	public static void addAtBeginning(int id, String name, String priority, String dueDate) {
         Task newTask = new Task(id, name, priority, dueDate);
 
@@ -47,7 +50,8 @@ public class TaskScheduler {
             head = newTask;
             newTask.next = head;
             current = head;
-        } else {
+        }
+        else {
             Task temp = head;
             while (temp.next != head) {
                 temp = temp.next;
@@ -57,6 +61,7 @@ public class TaskScheduler {
             temp.next = head;
         }
     }
+
 	public static void addAtEnd(int id, String name, String priority, String dueDate) {
         Task newTask = new Task(id, name, priority, dueDate);
 
@@ -74,6 +79,7 @@ public class TaskScheduler {
         temp.next = newTask;
         newTask.next = head;
     }
+
 	public static void addAtPosition(int pos, int id, String name, String priority, String dueDate) {
         if (pos <= 1) {
             addAtBeginning(id, name, priority, dueDate);
@@ -92,6 +98,7 @@ public class TaskScheduler {
         newTask.next = temp.next;
         temp.next = newTask;
     }
+
 	public static void removeById(int id) {
         if (head == null) {
             System.out.println("Task list is empty!");
@@ -100,7 +107,6 @@ public class TaskScheduler {
 
         Task temp = head;
         Task prev = null;
-
         
         if (temp.taskId == id) {
             if (temp.next == head) { 
@@ -115,7 +121,6 @@ public class TaskScheduler {
             head = head.next;
             return;
         }
-
        
         temp = head;
         do {
@@ -125,11 +130,11 @@ public class TaskScheduler {
                 prev.next = temp.next;
                 return;
             }
-        } while (temp != head);
+        }
+        while (temp != head);
 
         System.out.println("Task not found!");
     }
-
    
     public static void viewCurrentAndNext() {
         if (current == null) {
@@ -140,6 +145,7 @@ public class TaskScheduler {
                 ", Priority: " + current.priority + ", Due: " + current.dueDate);
         current = current.next; 
     }
+
     public static void displayAll() {
         if (head == null) {
             System.out.println("Task list is empty!");
@@ -151,9 +157,9 @@ public class TaskScheduler {
             System.out.println("ID: " + temp.taskId + ", Name: " + temp.taskName +
                     ", Priority: " + temp.priority + ", Due: " + temp.dueDate);
             temp = temp.next;
-        } while (temp != head);
+        }
+        while (temp != head);
     }
-
     
     public static void searchByPriority(String priority) {
         if (head == null) {
@@ -170,7 +176,8 @@ public class TaskScheduler {
                 found = true;
             }
             temp = temp.next;
-        } while (temp != head);
+        }
+        while (temp != head);
 
         if (!found) {
             System.out.println("No task found with priority: " + priority);

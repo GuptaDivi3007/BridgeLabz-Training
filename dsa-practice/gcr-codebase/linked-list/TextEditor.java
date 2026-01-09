@@ -1,4 +1,5 @@
-package LinkedList;
+import java.util.*;
+
 class TextState {
     String text;
     TextState prev, next;
@@ -8,18 +9,20 @@ class TextState {
         this.prev = this.next = null;
     }
 }
+
 public class TextEditor {
+
 	static TextState head = null;
 	static TextState current = null;
 	static int size = 0;
 	static final int LIMIT = 10;
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		addState("Hello");
         addState("Hello World");
         addState("Hello World!");
         displayCurrent();
-
       
         undo();
         displayCurrent();
@@ -27,20 +30,17 @@ public class TextEditor {
         undo();
         displayCurrent();
 
-       
         redo();
         displayCurrent();
-
         
         addState("Hello World!!!");
         displayCurrent();
 
-       
         redo();
 	}
+
 	public static void addState(String newText) {
         TextState newState = new TextState(newText);
-
         
         if (current != null && current.next != null) {
             current.next.prev = null;  
@@ -51,13 +51,13 @@ public class TextEditor {
             head = newState;
             current = newState;
             size = 1;
-        } else {
+        }
+        else {
             current.next = newState;
             newState.prev = current;
             current = newState;
             size++;
         }
-
        
         while (size > LIMIT) {
             head = head.next;
@@ -70,26 +70,27 @@ public class TextEditor {
         if (current != null && current.prev != null) {
             current = current.prev;
             System.out.println("Undo performed.");
-        } else {
+        }
+        else {
             System.out.println("No more undo available!");
         }
     }
-
    
     public static void redo() {
         if (current != null && current.next != null) {
             current = current.next;
             System.out.println("Redo performed.");
-        } else {
+        }
+        else {
             System.out.println("No more redo available!");
         }
     }
-
    
     public static void displayCurrent() {
         if (current != null) {
             System.out.println("Current Text State: \"" + current.text + "\"");
-        } else {
+        }
+        else {
             System.out.println("Editor is empty.");
         }
     }

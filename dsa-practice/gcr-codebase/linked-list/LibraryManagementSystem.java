@@ -1,4 +1,5 @@
-package LinkedList;
+import java.util.*;
+
 class Book {
     int bookId;
     String title;
@@ -17,11 +18,14 @@ class Book {
         this.next = null;
     }
 }
+
 public class LibraryManagementSystem {
+
 	static Book head = null;
     static Book tail = null;
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		addAtBeginning(101, "The Alchemist", "Paulo Coelho", "Fiction", true);
         addAtEnd(102, "Java Programming", "James Gosling", "Education", true);
         addAtPosition(2, 103, "1984", "George Orwell", "Dystopia", false);
@@ -50,30 +54,31 @@ public class LibraryManagementSystem {
         displayForward();
         countBooks();
 	}
+    
 	public static void addAtBeginning(int id, String title, String author, String genre, boolean status) {
         Book newBook = new Book(id, title, author, genre, status);
         if (head == null) {
             head = tail = newBook;
-        } else {
+        }
+        else {
             newBook.next = head;
             head.prev = newBook;
             head = newBook;
         }
     }
-
    
     public static void addAtEnd(int id, String title, String author, String genre, boolean status) {
         Book newBook = new Book(id, title, author, genre, status);
         if (tail == null) {
             head = tail = newBook;
-        } else {
+        }
+        else {
             tail.next = newBook;
             newBook.prev = tail;
             tail = newBook;
         }
     }
 
-    
     public static void addAtPosition(int pos, int id, String title, String author, String genre, boolean status) {
         if (pos <= 1) {
             addAtBeginning(id, title, author, genre, status);
@@ -100,7 +105,6 @@ public class LibraryManagementSystem {
         temp.next = newBook;
     }
 
-   
     public static void removeById(int id) {
         if (head == null) {
             System.out.println("Library is empty!");
@@ -109,11 +113,11 @@ public class LibraryManagementSystem {
 
         Book temp = head;
 
-       
         if (temp.bookId == id) {
             if (head == tail) {
                 head = tail = null;
-            } else {
+            }
+            else {
                 head = head.next;
                 head.prev = null;
             }
@@ -133,7 +137,8 @@ public class LibraryManagementSystem {
         if (temp == tail) {
             tail = tail.prev;
             tail.next = null;
-        } else {
+        }
+        else {
             temp.prev.next = temp.next;
             temp.next.prev = temp.prev;
         }
@@ -141,7 +146,6 @@ public class LibraryManagementSystem {
         System.out.println("Book removed successfully!");
     }
 
-    
     public static void searchByTitle(String title) {
         Book temp = head;
         boolean found = false;
@@ -157,7 +161,6 @@ public class LibraryManagementSystem {
         if (!found) System.out.println("No book found with title: " + title);
     }
 
-    
     public static void searchByAuthor(String author) {
         Book temp = head;
         boolean found = false;
@@ -173,7 +176,6 @@ public class LibraryManagementSystem {
         if (!found) System.out.println("No book found by author: " + author);
     }
 
-    
     public static void updateStatus(int id, boolean status) {
         Book temp = head;
 
@@ -188,7 +190,6 @@ public class LibraryManagementSystem {
 
         System.out.println("Book ID not found!");
     }
-
    
     public static void displayForward() {
         if (head == null) {
@@ -204,7 +205,6 @@ public class LibraryManagementSystem {
         }
     }
 
-   
     public static void displayReverse() {
         if (tail == null) {
             System.out.println("Library is empty!");
@@ -219,7 +219,6 @@ public class LibraryManagementSystem {
         }
     }
 
-   
     public static void countBooks() {
         int count = 0;
         Book temp = head;
@@ -231,7 +230,6 @@ public class LibraryManagementSystem {
 
         System.out.println("Total Books in Library: " + count);
     }
-
     
     public static void printBookDetails(Book b) {
         System.out.println("ID: " + b.bookId +
