@@ -1,3 +1,5 @@
+import java.util.*;
+
 class CustomHashMap {
 
     private static class Entry {
@@ -56,7 +58,8 @@ class CustomHashMap {
             if (head.key == key) {
                 if (prev == null) {
                     table[index] = head.next;
-                } else {
+                }
+                else {
                     prev.next = head.next;
                 }
                 return;
@@ -68,6 +71,7 @@ class CustomHashMap {
 }
 
 public class CustomHashMapDemo {
+    
     public static void main(String[] args) {
         CustomHashMap map = new CustomHashMap();
         map.put(1, 100);

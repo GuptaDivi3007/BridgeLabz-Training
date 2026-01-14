@@ -19,9 +19,11 @@ public class LongestConsecutiveSequence {
                     current++;
                     count++;
                 }
+
                 longest = Math.max(longest, count);
             }
         }
+        
         return longest;
     }
 
