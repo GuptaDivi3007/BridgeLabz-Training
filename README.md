@@ -89,6 +89,11 @@ BridgeLabz-Training
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/leet-code-codebase  
 * **7-Jan-2026 (Wednesday) :** Solved 2 story based problems and submitted its assignment.  
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based  
-* **8-Jan-2026 (Thursday) :** Understand the concepts of singly, doubly and circular linkedlist and submitted their assignment.  
-  link: 
+* **8-Jan-2026 (Thursday) :** Understand the concepts of singly, doubly and circular linkedlist and solved some questions.    
+* **9-Jan-2026 (Friday) :** Solved some questions and submitted the assignment of single, doubly and circular linkedlist.  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linked-list
+### Week 5
+* **12-Jan-2026 (Monday) :** Solved some scenario-based questions of oops like Vehicle Rental Application.  
+* **13-Jan-2026 (Tuesday) :** Solved and completed scenario-based assignment and perform merge-conflict demo.
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based
 
