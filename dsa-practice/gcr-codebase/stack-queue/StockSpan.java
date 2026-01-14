@@ -1,12 +1,11 @@
-import java.util.ArrayList;
+import java.util.*;
 
 class StockSpan {
 
     static ArrayList<Integer> calculateSpan(int[] arr) {
 
         int n = arr.length; 
-        ArrayList<Integer> span = new ArrayList<>(
-                              Collections.nCopies(n, 0));  
+        ArrayList<Integer> span = new ArrayList<>(Collections.nCopies(n, 0));  
         Stack<Integer> st = new Stack<>();  
 
         // Process each day's price
@@ -21,7 +20,8 @@ class StockSpan {
 
             if (st.isEmpty()) {
                 span.set(i, (i + 1));
-            } else {
+            }
+            else {
                 span.set(i, (i - st.peek()));
             }
 

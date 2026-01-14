@@ -1,15 +1,19 @@
-
+import java.util.*;
 
 class SlidingWindowMaximum {
+
     public static void main(String[] args) {
+
         SlidingWindowMaximum solver = new SlidingWindowMaximum();
+
         int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
         int k = 3;
-        int[] result = solver.maxSlidingWindow(nums, k);
-        for (int num : result) {
+        int[] ans = solver.maxSlidingWindow(nums, k);
+        for (int num : ans) {
             System.out.print(num + " ");
         }
     }
+
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
         int[] ans = new int[n - k + 1];
@@ -34,7 +38,7 @@ class SlidingWindowMaximum {
                 ans[i - k + 1] = nums[dq.peekFirst()];
             }
         }
+        
         return ans;
     }
- }
 }

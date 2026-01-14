@@ -1,4 +1,4 @@
-import java.util.Stack;
+import java.util.*;
 
 class CircularTourUsingStack {
 
@@ -52,7 +52,8 @@ class CircularTourUsingStack {
 
         if (start == -1) {
             System.out.println("No circular tour possible");
-        } else {
+        }
+        else {
             System.out.println("Start from petrol pump index: " + start);
         }
     }
