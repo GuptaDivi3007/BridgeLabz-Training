@@ -22,6 +22,7 @@ BridgeLabz-Training
 │   │
 │   ├── gcr-codebase
 |   |   ├── access-modifier
+|   |   ├── address-book-project
 |   |   ├── class-object
 |   |   ├── constructor
 │   │   ├── inheritance
@@ -37,7 +38,10 @@ BridgeLabz-Training
 ├── dsa-practice    (branch & folder)
 │   │
 │   ├── gcr-codebase
+|   |   ├── hashmap
 |   |   ├── linked-list
+|   |   ├── sorting-algorithms
+|   |   ├── stack-queue
 │   │
 │   ├── scenario-based
 │   │
@@ -99,4 +103,5 @@ BridgeLabz-Training
 * **14-Jan-2026 (Wednesday) :** Solved and submitted stack, queue and hashmap assignment.  
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/stack-queue  
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/hashmap  
+* **15-Jan-2026 (Thursday) :** Worked on implementing and solving sorting algorithms and attended weekly meeting with the mentor, had an interactive session covering OOPs concepts, core java concepts, this keyword and annotations.  
 
