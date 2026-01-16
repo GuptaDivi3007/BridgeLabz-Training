@@ -104,4 +104,6 @@ BridgeLabz-Training
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/stack-queue  
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/hashmap  
 * **15-Jan-2026 (Thursday) :** Worked on implementing and solving sorting algorithms and attended weekly meeting with the mentor, had an interactive session covering OOPs concepts, core java concepts, this keyword and annotations.  
+* **16-Jan-2026 (Friday) :** Solved and submitted sorting algorithms assignment.  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms  
 
