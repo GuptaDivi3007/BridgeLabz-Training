@@ -1,0 +1,5 @@
+Hello World!
+This is a sample text file.
+Each line is read one by one.
+FileReader with BufferedReader is being used.
+This is the last line of the file.
