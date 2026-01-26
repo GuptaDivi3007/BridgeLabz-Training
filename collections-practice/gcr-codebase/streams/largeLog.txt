@@ -1,0 +1,6 @@
+INFO Server started successfully
+INFO Connection established
+ERROR Database connection failed
+WARNING Low memory
+error File not found
+INFO Request completed

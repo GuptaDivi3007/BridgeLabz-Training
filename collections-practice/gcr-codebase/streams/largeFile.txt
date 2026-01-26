@@ -1,0 +1,30 @@
+This is a large file used for performance testing.
+Buffered streams improve efficiency when handling big files.
+Reading and writing data in chunks reduces IO overhead.
+This line is repeated multiple times to increase file size.
+
+This is a large file used for performance testing.
+Buffered streams improve efficiency when handling big files.
+Reading and writing data in chunks reduces IO overhead.
+This line is repeated multiple times to increase file size.
+
+This is a large file used for performance testing.
+Buffered streams improve efficiency when handling big files.
+Reading and writing data in chunks reduces IO overhead.
+This line is repeated multiple times to increase file size.
+
+This is a large file used for performance testing.
+Buffered streams improve efficiency when handling big files.
+Reading and writing data in chunks reduces IO overhead.
+This line is repeated multiple times to increase file size.
+
+This is a large file used for performance testing.
+Buffered streams improve efficiency when handling big files.
+Reading and writing data in chunks reduces IO overhead.
+This line is repeated multiple times to increase file size.
+
+This is a large file used for performance testing.
+Buffered streams improve efficiency when handling big files.
+Reading and writing data in chunks reduces IO overhead.
+This line is repeated multiple times to increase file size.
+

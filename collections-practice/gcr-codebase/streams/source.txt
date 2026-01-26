@@ -1,0 +1,4 @@
+This is the source file.
+It contains sample text data.
+This file will be copied to destination.txt
+using FileInputStream and FileOutputStream.
