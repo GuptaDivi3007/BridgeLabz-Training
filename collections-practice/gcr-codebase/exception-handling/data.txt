@@ -1,0 +1,4 @@
+Hello, this is sample data.
+This file is used to test file reading in Java.
+Each line will be printed on the console.
+End of file.
