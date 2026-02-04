@@ -71,8 +71,8 @@ BridgeLabz-Training
 ├── io-programming-practice    (branch & folder)
 │   │
 │   ├── gcr-codebase
-|   |   ├── 
-|   |   ├── 
+|   |   ├── csv-data-handling
+|   |   ├── jsondata
 │   │
 │   ├── scenario-based
 │   │
@@ -81,8 +81,9 @@ BridgeLabz-Training
 ├── java8-features-practice    (branch & folder)
 │   │
 │   ├── gcr-codebase
-|   |   ├── 
-|   |   ├── 
+|   |   ├── functional-interface
+|   |   ├── lambda-expressions
+|   |   ├── stream-api
 │   │
 │   ├── scenario-based
 │   │
@@ -176,8 +177,10 @@ BridgeLabz-Training
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase  
-* **3-Feb-2026 (Tuesday) :** Solved scenario based questions of Factory Robot Hazard Analyzer and Stream Buzz.
+* **3-Feb-2026 (Tuesday) :** Solved scenario based questions of Factory Robot Hazard Analyzer and Stream Buzz and lambda expressions assignment.
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based
-  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based  
-* **4-Feb-2026 (Wednesday) :**
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/lambda-expressions  
+* **4-Feb-2026 (Wednesday) :** Solved and submitted functional interface and stream api assignments.
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase  
 
