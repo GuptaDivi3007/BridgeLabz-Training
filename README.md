@@ -38,10 +38,51 @@ BridgeLabz-Training
 ├── dsa-practice    (branch & folder)
 │   │
 │   ├── gcr-codebase
+|   |   ├── binary-search
+|   |   ├── filereader-inputstreamreader
 |   |   ├── hashmap
+|   |   ├── linear-search
 |   |   ├── linked-list
 |   |   ├── sorting-algorithms
 |   |   ├── stack-queue
+|   |   ├── stringbuilder-stringbuffer
+|   |   └── time-space-complexity
+│   │
+│   ├── scenario-based
+│   │
+│   └── leet-code-codebase
+|
+├── collections-practice    (branch & folder)
+│   │
+│   ├── gcr-codebase
+|   |   ├── annotations
+|   |   ├── collections
+|   |   ├── exception-handling
+|   |   ├── generics
+|   |   ├── junit
+|   |   ├── reflection
+|   |   ├── regex
+|   |   └── streams
+│   │
+│   ├── scenario-based
+│   │
+│   └── leet-code-codebase
+│
+├── io-programming-practice    (branch & folder)
+│   │
+│   ├── gcr-codebase
+|   |   ├── 
+|   |   ├── 
+│   │
+│   ├── scenario-based
+│   │
+│   └── leet-code-codebase
+│
+├── java8-features-practice    (branch & folder)
+│   │
+│   ├── gcr-codebase
+|   |   ├── 
+|   |   ├── 
 │   │
 │   ├── scenario-based
 │   │
@@ -106,4 +147,37 @@ BridgeLabz-Training
 * **15-Jan-2026 (Thursday) :** Worked on implementing and solving sorting algorithms and attended weekly meeting with the mentor, had an interactive session covering OOPs concepts, core java concepts, this keyword and annotations.  
 * **16-Jan-2026 (Friday) :** Solved and submitted sorting algorithms assignment.  
   link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms  
+* **17-Jan-2026 (Saturday) :** Understanding about the Address Book Problem.  
+### Week 6
+* **19-Jan-2026 (Monday) :** Solved Address Book Problem till use case 4.
+* **20-Jan-2026 (Tuesday) :** Solved and submitted time and space complexity assignment and solved Cinema Time scenario based problem in dsa practice branch.
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/time-space-complexity
+* **21-Jan-2026 (Wednesday) :** Solved and submitted linear and binary search assignment.  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase  
+* **22-Jan-2026 (Thursday) :** Cleared my study backlog. 
+* **23-Jan-2026 (Friday) :** Studied about java generics and solved some of the questions.  
+### Week 7
+* **27-Jan-2026 (Tuesday) :** Solved and submitted Address Book Problem till use case 8 and generics assignment.  
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/address-book-project
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/generics  
+* **28-Jan-2026 (Wednesday) :** Solved and submitted collections and java streams assignment.
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/collections
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/streams  
+* **29-Jan-2026 (Thursday) :** Studied about the scenario based problems and approached to their solutions.  
+* **30-Jan-2026 (Friday) :** Studied about java exceptions using study material.  
+* **31-Jan-2026 (Saturday) :** Solved and submitted java exceptions assignment.
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase
+* **1-Feb-2026 (Sunday) :** Solved and submitted Lexical Twist, Flip Key Logical Problem and regex and junit assignment.
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase
+### Week 8
+* **2-Feb-2026 (Monday) :** Solved some scenario based problems and Future Logistics problem and annotations and reflection and csv data handling assignment.
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase  
+* **3-Feb-2026 (Tuesday) :** Solved scenario based questions of Factory Robot Hazard Analyzer and Stream Buzz.
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based
+  link: https://github.com/GuptaDivi3007/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based  
+* **4-Feb-2026 (Wednesday) :**
 
