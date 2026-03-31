@@ -1,0 +1,45 @@
+This is a sample large file used for performance testing.
+The purpose of this file is to simulate reading a very large dataset.
+Each line contains multiple words separated by spaces.
+This helps in counting words efficiently using different stream readers.
+
+In real world applications, files can be very large.
+Examples include log files, server backups, data exports, and reports.
+Efficient file reading is important for performance critical systems.
+
+Java provides FileReader for character-based reading.
+Java also provides InputStreamReader to convert byte streams to character streams.
+BufferedReader is used to improve reading performance.
+
+This file is intentionally repetitive.
+Repetition helps in increasing file size without changing logic.
+Testing large files helps understand IO bottlenecks.
+
+Reading large files line by line is safer than reading the entire file at once.
+Memory consumption stays under control.
+This approach is commonly used in enterprise applications.
+
+End of sample block.
+
+This is a sample large file used for performance testing.
+The purpose of this file is to simulate reading a very large dataset.
+Each line contains multiple words separated by spaces.
+This helps in counting words efficiently using different stream readers.
+
+In real world applications, files can be very large.
+Examples include log files, server backups, data exports, and reports.
+Efficient file reading is important for performance critical systems.
+
+Java provides FileReader for character-based reading.
+Java also provides InputStreamReader to convert byte streams to character streams.
+BufferedReader is used to improve reading performance.
+
+This file is intentionally repetitive.
+Repetition helps in increasing file size without changing logic.
+Testing large files helps understand IO bottlenecks.
+
+Reading large files line by line is safer than reading the entire file at once.
+Memory consumption stays under control.
+This approach is commonly used in enterprise applications.
+
+End of sample block.
