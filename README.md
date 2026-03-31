@@ -55,6 +55,7 @@ BridgeLabz-Training
 ├── collections-practice    (branch & folder)
 │   │
 │   ├── gcr-codebase
+|   |   ├── SonarQube
 |   |   ├── annotations
 |   |   ├── collections
 |   |   ├── exception-handling
@@ -70,24 +71,34 @@ BridgeLabz-Training
 │
 ├── io-programming-practice    (branch & folder)
 │   │
-│   ├── gcr-codebase
-|   |   ├── csv-data-handling
-|   |   ├── jsondata
-│   │
-│   ├── scenario-based
-│   │
-│   └── leet-code-codebase
+│   └── gcr-codebase
+|       ├── csv-data-handling
+|       └── jsondata
 │
 ├── java8-features-practice    (branch & folder)
 │   │
 │   ├── gcr-codebase
+|   |   ├── collectors
 |   |   ├── functional-interface
 |   |   ├── lambda-expressions
-|   |   ├── stream-api
+|   |   └── stream-api
 │   │
-│   ├── scenario-based
+│   └── scenario-based
+│
+├── solution-designing-practice    (branch & folder)
 │   │
-│   └── leet-code-codebase
+│   └── gcr-codebase
+|       └── smartLibraryManagementSystem
+│
+├── multi-threading-practice    (branch & folder)
+│   │
+│   └── gcr-codebase
+|       └── multi-threading
+│
+├── jdbc-dbms-practice    (branch & folder)
+│   │
+│   └── gcr-codebase
+|       └── healthclinic
 │
 ├── reviews    (branch)
 ```
