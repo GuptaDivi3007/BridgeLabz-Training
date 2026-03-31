@@ -1,0 +1,4 @@
+Java is powerful.
+Java is fast.
+Java is widely used.
+Learning Java is useful.
