@@ -1,4 +1,3 @@
--- DCL Commands
 CREATE USER 'gdivya3007@gmail.com'@'%' IDENTIFIED BY 'Divya@1234';
 
 -- Grant a user SELECT and INSERT permission on our database
