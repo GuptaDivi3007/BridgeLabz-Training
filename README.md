@@ -54,3 +54,18 @@
 - Implemented CRUD operations for **Patients, Doctors, Appointments, Billing, and Visit History**.
 - Completed the **Health Clinic Console Application** using Java, JDBC, Maven, and MySQL.
 
+## Day 5 — Tomcat, Servlets & Spring Introduction
+
+### 📌 06/08/2026
+
+- Learned the role of **Apache Tomcat** as a Web/Servlet Container and how it executes Servlets.
+- Understood the **Servlet Lifecycle** and the complete Browser → Tomcat → Servlet → Browser request-response flow.
+- Configured **Apache Tomcat** with IntelliJ IDEA using Smart Tomcat.
+- Built and successfully deployed the **First Servlet Application**.
+- Learned URL mapping using `@WebServlet` and request handling through `doGet()`.
+- Explored the basics of the **Spring Framework** and why it is used.
+- Learned the core concepts of **Inversion of Control (IoC)** and **Dependency Injection (DI)**.
+- Related Spring's dependency injection to manual object creation (`new`) used in previous Java console applications.
+- Deployed basic servlet on tomcat.
+- Explore Spring's IoC container with a simple bean example.
+
