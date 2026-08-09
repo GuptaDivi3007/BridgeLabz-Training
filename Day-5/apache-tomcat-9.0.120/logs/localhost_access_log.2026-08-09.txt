@@ -32,3 +32,9 @@
 0:0:0:0:0:0:0:1 - - [09/Aug/2026:23:25:47 +0530] "GET /FirstServletProject/FirstServlet HTTP/1.1" 200 68
 0:0:0:0:0:0:0:1 - - [09/Aug/2026:23:25:47 +0530] "GET /favicon.ico HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [09/Aug/2026:23:25:48 +0530] "GET /FirstServletProject/FirstServlet HTTP/1.1" 200 68
+0:0:0:0:0:0:0:1 - - [09/Aug/2026:23:53:59 +0530] "GET /FirstServletProject/FirstServlet HTTP/1.1" 200 68
+0:0:0:0:0:0:0:1 - - [09/Aug/2026:23:53:59 +0530] "GET /favicon.ico HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/Aug/2026:23:54:19 +0530] "GET /FirstServletProject/login.html HTTP/1.1" 200 390
+0:0:0:0:0:0:0:1 - - [09/Aug/2026:23:54:33 +0530] "POST /FirstServletProject/LoginServlet HTTP/1.1" 200 195
+0:0:0:0:0:0:0:1 - - [09/Aug/2026:23:55:19 +0530] "GET /FirstServletProject/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/Aug/2026:23:55:39 +0530] "POST /FirstServletProject/LoginServlet HTTP/1.1" 200 446
