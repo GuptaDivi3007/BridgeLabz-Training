@@ -69,3 +69,15 @@
 - Deployed basic servlet on tomcat.
 - Explore Spring's IoC container with a simple bean example.
 
+## Day 6 — Spring MVC
+
+### 📌 07/08/2026
+
+- Understood **Spring MVC architecture** and the role of `DispatcherServlet`.
+- Learned how **Controllers and Views** work in Spring MVC.
+- Learned request mapping and request handling using `@Controller`, `@RequestMapping`, `@GetMapping`, and `@PostMapping`.
+- Understood how `DispatcherServlet` acts as the single entry point for HTTP requests.
+- Built the required **My Greetings App** using Spring MVC.
+- Learned how Spring MVC connects the **Controller → Service → DAO** layers.
+- Tested HTTP requests and responses through Spring MVC endpoints.
+
