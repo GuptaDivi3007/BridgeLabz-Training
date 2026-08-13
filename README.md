@@ -81,3 +81,38 @@
 - Learned how Spring MVC connects the **Controller → Service → DAO** layers.
 - Tested HTTP requests and responses through Spring MVC endpoints.
 
+## Day 7 — Spring REST API & Request Handling
+
+### 📌 10/08/2026
+
+- Learned proper REST conventions — resource-based URLs, with HTTP methods carrying the action.
+- Used ResponseEntity for explicit control over HTTP status codes such as 200, 201, 204, and 404.
+- Learned Bean Validation with @NotBlank, @Email, @Pattern, and @Valid to reject bad input before business logic.
+- Centralized error handling with @ControllerAdvice and @ExceptionHandler instead of repeating try/catch logic in every Controller.
+- Set up H2 in-memory database for zero-install, fast-iteration development and understood its trade-off compared with MySQL.
+- Got a conceptual grounding in Distributed Architectures — why systems split into services and what complexity that introduces.
+- Started the Contacts App with working, validated, properly status-coded REST endpoints.
+
+## Day 8 - API Testing Tools & SDLC Exposure
+
+### 📌 11/08/2026
+
+- Learned REST Assured's Given / When / Then structure for automated API testing instead of manual Postman/curl checks.
+- Covered happy-path and unhappy-path tests, connecting directly to Day 7 status-code and validation behavior.
+- Learned JSON Server for mocking and enabling parallel frontend/backend development, and understood what it is not for.
+- Mapped Requirement, Design, Implementation, Testing, Deployment, and Maintenance to the course.
+- Compared Waterfall and Agile and understood why Agile is more common for evolving requirements.
+- Finished the Contacts App with a complete automated test suite, closing the Backend Basics phase of Days 5–8.
+
+## Day 9 - Spring Boot Fundamentals
+
+### 📌 12/08/2026
+
+- Spring Boot is built on top of Spring; it does not replace Spring Core or Spring MVC.
+- Auto-configuration is conditional and depends heavily on the classpath and application properties.
+- Spring Boot starters group commonly required dependencies into convenient Maven coordinates.
+- Embedded Tomcat allows a Spring Boot application to run as an executable JAR without a separately installedserver.
+- @RestController and @GetMapping belong to Spring MVC; Spring Boot provides the surrounding infrastructure.
+- Spring Initializr provides a practical way to create a correctly structured Spring Boot project.
+- The Contacts App can be extended with a search-by-name endpoint using the same Controller → Service → DAO flow learned earlier.
+
