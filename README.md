@@ -2,7 +2,7 @@
 
 ## Day 1 — DBMS Fundamentals & RDBMS Basics
 
-### 📌 31/07/2026
+### 📌 31/07/2026 (Friday)
 
 - Learned the foundational hierarchy: **Data → Database → DBMS → RDBMS**.
 - Compared **File Systems vs DBMS**, and understood DBMS advantages (reduced redundancy, integrity, security, concurrency).
@@ -15,7 +15,7 @@
 
 ## Day 2 - ER Diagram, Indexing, Database Normalization
 
-### 📌 03/08/2026
+### 📌 03/08/2026 (Monday)
 
 - Learned formal **ER Diagram** components: Entity, Attribute, Relationship, Cardinality, Participation, Primary/Foreign Keys.
 - Designed the **complete ER Diagram** for the Health Clinic Application, resolving the Doctor ↔ Specialization M:N relationship via a junction table.
@@ -27,7 +27,7 @@
 
 ## Day 3 — SQL Joins, Stored Procedures, Triggers
 
-### 📌 04/08/2026
+### 📌 04/08/2026 (Tuesday)
 
 - Moved from single-table queries to combining data across multiple related tables using all major JOIN types: INNER, LEFT, RIGHT, FULL OUTER, SELF, and CROSS JOIN.
 - Wrote real multi-table joins across the normalized Health Clinic schema (Patients, Doctors, Appointments, Billing, Visit History) to pull meaningful combined reports.
@@ -43,7 +43,7 @@
 
 ## Day 4 — JDBC, Transactions & Health Clinic Console Application
 
-### 📌 05/08/2026
+### 📌 05/08/2026 (Wednesday)
 
 - Connected Java with MySQL using JDBC.
 - Learned DriverManager, PreparedStatement, ResultSet, and Exception Handling.
@@ -56,7 +56,7 @@
 
 ## Day 5 — Tomcat, Servlets & Spring Introduction
 
-### 📌 06/08/2026
+### 📌 06/08/2026 (Thursday)
 
 - Learned the role of **Apache Tomcat** as a Web/Servlet Container and how it executes Servlets.
 - Understood the **Servlet Lifecycle** and the complete Browser → Tomcat → Servlet → Browser request-response flow.
@@ -71,7 +71,7 @@
 
 ## Day 6 — Spring MVC
 
-### 📌 07/08/2026
+### 📌 07/08/2026 (Friday)
 
 - Understood **Spring MVC architecture** and the role of `DispatcherServlet`.
 - Learned how **Controllers and Views** work in Spring MVC.
@@ -83,7 +83,7 @@
 
 ## Day 7 — Spring REST API & Request Handling
 
-### 📌 10/08/2026
+### 📌 10/08/2026 (Monday)
 
 - Learned proper REST conventions — resource-based URLs, with HTTP methods carrying the action.
 - Used ResponseEntity for explicit control over HTTP status codes such as 200, 201, 204, and 404.
@@ -95,7 +95,7 @@
 
 ## Day 8 - API Testing Tools & SDLC Exposure
 
-### 📌 11/08/2026
+### 📌 11/08/2026 (Tuesday)
 
 - Learned REST Assured's Given / When / Then structure for automated API testing instead of manual Postman/curl checks.
 - Covered happy-path and unhappy-path tests, connecting directly to Day 7 status-code and validation behavior.
@@ -106,7 +106,7 @@
 
 ## Day 9 - Spring Boot Fundamentals
 
-### 📌 12/08/2026
+### 📌 12/08/2026 (Wednesday)
 
 - Spring Boot is built on top of Spring; it does not replace Spring Core or Spring MVC.
 - Auto-configuration is conditional and depends heavily on the classpath and application properties.
@@ -115,4 +115,27 @@
 - @RestController and @GetMapping belong to Spring MVC; Spring Boot provides the surrounding infrastructure.
 - Spring Initializr provides a practical way to create a correctly structured Spring Boot project.
 - The Contacts App can be extended with a search-by-name endpoint using the same Controller → Service → DAO flow learned earlier.
+
+## Day 10 — Dependency Injection & H2 Database
+
+### 📌 13/08/2026 (Thursday)
+
+- Revisited Dependency Injection from Day 5 with real-world cases: multiple bean implementations, circular dependencies, and how Spring resolves constructor arguments.
+- Learned how Spring resolves ambiguity between multiple beans of the same type using `@Primary` and `@Qualifier`.
+- Demonstrated bean resolution hands-on: created two `ContactDAO` implementations, triggered `NoUniqueBeanDefinitionException`, resolved it with `@Primary`, then overrode that default at a specific injection point using `@Qualifier`.
+- Studied circular dependencies — how to recognize them and redesign around them.
+- Understood H2 configuration modes and the H2 Console, applying Day 9's auto-configuration concepts to database setup.
+- Applied the same layered architecture to a second Spring Boot application (Employee Payroll App).
+
+## Day 11 — Spring Services, Spring JPA & Spring JDBC
+
+### 📌 14/08/2026 (Friday)
+
+- Formalized the three-layer architecture — clearly defined what belongs in a Controller, a Service, and a DAO/Repository.
+- Practiced Spring REST API service-layer design.
+- Learned Spring JPA — repositories and entity mapping, including writing a Spring Data JPA repository interface with full CRUD and no implementation class required.
+- Learned Spring JDBC — template-based data access using `JdbcTemplate` for cases needing direct SQL control without hand written JDBC boilerplate.
+- Compared three approaches to relational data access: hand-written JDBC, `JdbcTemplate`, and Spring Data JPA — and when to choose each based on the actual requirement.
+- Rebuilt the Employee Payroll App using Spring Data JPA, completing its CRUD endpoints (GET/PUT/DELETE by ID) with appropriate HTTP status codes and the Controller → Service → DAO separation intact.
+
 
