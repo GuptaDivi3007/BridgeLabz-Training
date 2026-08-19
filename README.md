@@ -138,4 +138,15 @@
 - Compared three approaches to relational data access: hand-written JDBC, `JdbcTemplate`, and Spring Data JPA — and when to choose each based on the actual requirement.
 - Rebuilt the Employee Payroll App using Spring Data JPA, completing its CRUD endpoints (GET/PUT/DELETE by ID) with appropriate HTTP status codes and the Controller → Service → DAO separation intact.
 
+## Day 12 — Spring Bean Scopes, Logging, Maven & Postman
+
+### 📌 17/08/2026 (Monday)
+
+- Explained all four *Spring bean scopes* — `singleton`, `prototype`, `request`, `session` — and identified when each is appropriate.
+- Replaced System.out/System.err debugging with SLF4J/Logback logging across the codebase.
+- Understood Maven's dependency resolution and *build lifecycle* (validate → compile → test → package → verify → install → deploy) well enough to debug a broken build using dependency:tree.
+- Learned *Postman fundamentals* — collections, environments, variables, request chaining, and test assertions.
+- Built reusable Postman collections with environment variables, chained requests (e.g. passing a created id into subsequent Get/Update/Delete calls), and automated test assertions on status codes and response bodies.
+- Completed and fully tested the *Employee Payroll App* and *Address Book App backends* end-to-end via Postman.
+
 
