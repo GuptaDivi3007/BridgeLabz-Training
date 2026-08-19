@@ -27,7 +27,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public StudentDTO getStudentById(Integer id){
-        Student getStudentEntity = studentRepository.getReferenceById(Long.valueOf(id));
+        Student getStudentEntity = studentRepository.getReferenceById(id);
         return studentMapper.toDTO(getStudentEntity);
     }
 
@@ -50,13 +50,13 @@ public class StudentServiceImpl implements StudentService {
         if(id==null){
             throw new ResourceNotFoundException(id);
         }
-        studentRepository.deleteById(Long.valueOf(id));
+        studentRepository.deleteById(id);
         return;
     }
 
     @Override
     public StudentDTO updateStudent(StudentDTO studentDTO){
-        Student existingStudentEntity = studentRepository.findById(Long.valueOf(studentDTO.getStudentId()))
+        Student existingStudentEntity = studentRepository.findById(studentDTO.getStudentId())
                 .orElseThrow(() -> new RuntimeException("Student not found"));
         Student updatedStudentEntity = studentMapper.updateEntityFromDTO(studentDTO, existingStudentEntity);
         Student savedStudentEntity = studentRepository.save(updatedStudentEntity);

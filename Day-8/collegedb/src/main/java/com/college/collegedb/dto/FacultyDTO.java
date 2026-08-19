@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @Builder
 public class FacultyDTO{
     private Integer facultyId;
-    private String firstName; //we can also combine them into fullName in mapper and assign here only fullName
+    private String firstName;
     private String lastName;
     private String gender;
     private String email;
