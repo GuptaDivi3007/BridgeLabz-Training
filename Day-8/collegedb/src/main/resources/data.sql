@@ -7,7 +7,7 @@ INSERT INTO faculty (first_name, last_name, gender, email, address, city, state,
 ('Peter', 'Parker', 'Male', 'peter@gla.ac.in', 'Queens Street', 'Noida', 'UP', 'CS', 'Assistant Professor', 2023, 70000.00);
 
 INSERT INTO student (roll_number, first_name, last_name, gender, email, address, city, state, course, department, admission_year) VALUES
-('GLA0101', 'Dipanshu', 'Sharma', 'Male', 'ds460893@gmail.com', 'ABC Colony', 'Alahabad', 'Uttarpradesh', 'btech', 'CSE', 2022),
+('GLA0101', 'Divyanshi', 'Gupta', 'Female', 'gdivya3007@gmail.com', 'ABC Colony', 'Allahabad', 'Uttarpradesh', 'btech', 'CSE', 2022),
 ('GLA0102', 'Steve', 'Rogers', 'Male', 'steve.s@gmail.com', 'Sector 15', 'Noida', 'Uttarpradesh', 'btech', 'ME', 2022),
 ('GLA0103', 'Wanda', 'Maximoff', 'Female', 'wanda.m@gmail.com', 'Civil Lines', 'Mathura', 'Uttarpradesh', 'btech', 'CSE', 2023),
 ('GLA0104', 'Peter', 'Parker', 'Male', 'peter.p@gmail.com', 'MG Road', 'Agra', 'Uttarpradesh', 'btech', 'IT', 2021),

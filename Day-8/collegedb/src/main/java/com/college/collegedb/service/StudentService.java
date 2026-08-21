@@ -12,4 +12,5 @@ public interface StudentService {
     StudentDTO createStudent(StudentDTO studentDTO);
     void deleteStudentById(Integer studentId);
     StudentDTO updateStudent(StudentDTO studentDTO);
+    List<StudentDTO> searchByCity(String city);
 }

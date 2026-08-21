@@ -62,4 +62,12 @@ public class StudentServiceImpl implements StudentService {
         Student savedStudentEntity = studentRepository.save(updatedStudentEntity);
         return studentMapper.toDTO(savedStudentEntity);
     }
+
+    @Override
+    public List<StudentDTO> searchByCity(String city){
+        List<Student> students = studentRepository.findByCity(city);
+        return students.stream()
+                .map(studentMapper::toDTO)
+                .collect(Collectors.toList());
+    }
 }

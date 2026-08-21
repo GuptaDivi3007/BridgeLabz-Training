@@ -2,6 +2,7 @@ package com.college.collegedb.controller;
 
 import com.college.collegedb.dto.FacultyDTO;
 import com.college.collegedb.service.FacultyService;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,7 +26,7 @@ public class FacultyController {
     }
 
     @PostMapping
-    public FacultyDTO createFaculty(@RequestBody FacultyDTO facultyDTO){
+    public FacultyDTO createFaculty(@Valid @RequestBody FacultyDTO facultyDTO) {
         return facultyService.createFaculty(facultyDTO);
     }
 
@@ -35,7 +36,7 @@ public class FacultyController {
     }
 
     @PutMapping
-    public FacultyDTO updateFaculty(@RequestBody FacultyDTO facultyDTO){
+    public FacultyDTO updateFaculty(@Valid @RequestBody FacultyDTO facultyDTO) {
         return facultyService.updateFaculty(facultyDTO);
     }
 }
